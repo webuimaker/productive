@@ -1,0 +1,35 @@
+{% assign data = site.home.services %}
+
+{% if data.enabled %}    
+    <section id="features" class="section services" style="background-color: {{data.background}};">
+        <div class="container">  
+          <div class="section-title">
+            <h6>{{data.smallHeading}}</h6>
+            <h2>{{data.heading}}</h2>
+            <p>{{data.description}}</p>
+          </div>
+          <div class="row content row-cols-1 row-cols-sm-2 row-cols-md-3"> 
+          {% for item in data.items %} 
+            <div class="col">
+                <div class="service-box">         
+                    <div class="icon">
+                        <img src="{{item.icon}}" alt="{{item.heading}}" >                        
+                    </div>   
+                    <h5>{{item.heading}}</h5> 
+                    <p>
+                        {{item.body}}
+                    </p>       
+                    <a href="{{item.btnUrl}}">{{item.btnText}}</a>
+                   
+                </div>
+            </div>
+            {% endfor %}   
+        </div>
+
+
+
+  
+        </div>
+      </section><!-- End App Features Section -->
+{% endif %}
+

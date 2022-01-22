@@ -1,0 +1,71 @@
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top  header-transparent ">
+    <div class="container  align-items-center justify-content-between">
+
+    <nav class="navbar navbar-expand-sm" id="navbar" aria-label="Third navbar example">
+    <div class="container-fluid">
+      <div class="logo">
+        <h1><a href="index.html" class="navbar-brand"><img src="{{site.logo}}" alt="logo" class="img-fluid"></a></h1>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            {% for item in site.data.menu.main %}
+                        {% if item.child %}
+                        <li class="dropdown">
+                            <a href="{{ item.url }}"><span>{{ item.name }}</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                                {% for childitem in item.child  %}
+                                        <li><a href="{{ childitem.url }}">{{ childitem.name }}</a></li>
+                                    {% endfor %}
+                            </ul>
+                        </li>
+                             
+                            {% else %}
+                                <li><a class="nav-link scrollto {% if item.url == page.url %} active {% endif %}" href="{{ item.url }}">{{ item.name }}</a></li>  
+                        {% endif %}
+                    {% endfor %}        
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+        <div class="right-nav">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                {% for item in site.data.menu.right %}
+                            {% if item.child %}
+                            <li class="dropdown">
+                                <a href="{{ item.url }}"><span>{{ item.name }}</span> <i class="bi bi-chevron-down"></i></a>
+                                <ul>
+                                    {% for childitem in item.child  %}
+                                            <li><a href="{{ childitem.url }}">{{ childitem.name }}</a></li>
+                                        {% endfor %}
+                                </ul>
+                            </li>
+                                 
+                                {% else %}
+                                    <li>
+                                        
+                                     
+                                {% if item.button  %}
+                                    <a class="nav-link btn" href="{{ item.url }}">{{ item.name }}</a>
+
+                                {% else %}
+                                <a class="nav-link scrollto {% if item.url == page.url %} active {% endif %}" href="{{ item.url }}">{{ item.name }}</a>
+                                {% endif %}
+                            </li> 
+                            {% endif %}
+                        {% endfor %}        
+            </ul>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+    </div>
+  </header><!-- End Header -->

@@ -1,0 +1,23 @@
+main:
+  - name: Why Productive?                                             
+    url: "#home"
+  - name: Services
+    url: "#Services"
+  - name: How It Works
+    url: "#how-its-works"
+  - name: Pricing
+    url: "#about"
+    
+
+right:
+  - name: Sign In 
+    url: '/sponsor/'
+  - name: Try Productive Free
+    url: '#contact'
+    button: true
+
+    
+
+
+
+    

@@ -1,0 +1,39 @@
+{% assign data = site.home.price %}
+
+{% if data.enabled %}    
+    <section id="features" class="section services" style="background-color: {{data.background}};">
+        <div class="container">  
+          <div class="section-title">
+            <h6>{{data.smallHeading}}</h6>
+            <h2>{{data.heading}}</h2>
+            <p>{{data.description}}</p>
+          </div>
+          <div class="row content row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center"> 
+          {% for item in data.items %} 
+            <div class="col">
+                <div class="price-box">         
+                    <div class="price">
+                        {{item.price}}<span>/{{item.plan}}</span>                   
+                    </div>   
+                    <h5>{{item.heading}}</h5> 
+                    <p>
+                        {{item.body}}
+                    </p>     
+                    <ul class="mb-3">
+                        {% for adv in item.advantage %} 
+                            <li>{{adv.text}}</li>
+                        {% endfor %} 
+                    </ul>  
+
+                    <a href="{{item.btnUrl}}" class="btn-dark">{{item.btnText}}</a>
+                   
+                </div>
+            </div>
+            {% endfor %}   
+        </div>
+
+  
+        </div>
+      </section>
+{% endif %}
+

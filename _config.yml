@@ -1,0 +1,172 @@
+title: Productive
+email: your-email@example.com
+logo: "/assets/images/logo.svg"
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+home:
+  feature:
+    enabled: true
+    background:
+    heading: "Everything to keep your <br> team ticking"
+    smallHeading: "best Features"
+    description: Productive is so much more than just a simple time tracking software.
+    items:
+    - heading: You can Manage, all projects at one place
+      subHeading: Desktop
+      body: We envision a world where everyone can create powerful, flexible websites.
+      highlightText: "From consultancies to internal departments, and across industries."
+      image:  "/assets/images/feature1.svg"
+      btnText: "Learn More"
+      btnUrl: "#"
+    - heading: Time tracking that helps businesses thrive
+      subHeading: MObile
+      body: "We are providing a dedicated app, so you will be updated and no need a desktop every time when you want to track.
+        <ul><li> - Point1</li> <li> - Point1</li> <li> - Point1</li> </ul>"
+      highlightText: 
+      image:  "/assets/images/feature2.png"
+      btnText: 
+      btnUrl: 
+  services:
+    enabled: true
+    background: "#F8F9FC"
+    heading: "Now no need to manage many applications <br> for different task."
+    smallHeading: "best services"
+    description: Productive is so much more than just a simple time tracking software.
+    items:
+    - heading: Track Time
+      body: Intuitive, lightweight time tracking that’s easy to learn and use.
+      icon:  "/assets/images/62.svg"
+      btnText: "Learn More"
+      btnUrl: "#"
+    - heading: Report & Analyze
+      body: Gain insight and take action with easy to access visual reporting.
+      icon:  "/assets/images/41.svg"
+      btnText: "Learn More"
+      btnUrl: "#"
+    - heading: Invoice & Get Paid
+      body: Harvest works with the tools and workflows your team knows and loves.
+      icon:  "/assets/images/star.svg"
+      btnText: "Learn More"
+      btnUrl: "#"
+  price:
+    enabled: true
+    background: ""
+    heading: "We are providing you best <br> ever plan"
+    smallHeading: "best Price"
+    description: "While we can customize your plan to suit your needs, most clients schedule regular services:"
+    items:
+    - heading: "Extended🚗"
+      price: 12$
+      plan: month
+      body: Per month, paid annually, or $12 paid monthly
+      advantage:
+      - text: "Easy time tracking"
+      - text: "Apps for all your devices"
+      - text: Integrations that fit your workflow
+      - text: Insight into your projects and team
+      - text: Support from real humans
+      btnText: "Choose Plan"
+      btnUrl: "#"
+  subscribe:
+    enabled: true
+    background: "#F8F9FC"
+    heading: "Subscribe our Newslatter"
+    smallHeading: "what’s next?"
+    description: Get notification about tips, new product and exclusive promo news just for you.
+
+
+
+
+
+footer:
+  copyright: © 2021 Onix All rights reserved.
+  about: Build custom blogs, portfolios, ecommerce stores, and more with a flexible CMS. Experience the power of HTML, CSS.
+  leftcolHeading: Links
+  centercolHeading:  "About"
+  rightcolHeading: "Our Office"
+  leftcol:
+  - link: "/"
+    text: Home
+  - link: "/"
+    text: Services
+  - link: "/"
+    text: How It Works
+  - link: "/"
+    text: Tutorial
+  - link: "/"
+    text: Contact
+  centercol:
+  - text: Partners
+    link: "#home"
+    pageType: "same"
+  - text: Careers
+    link: "#how-its-works"
+    pageType: "same"
+  - text: Press
+    link: "#about"
+    pageType: "same"
+  - text: Press
+    link: "#about"
+    pageType: "Community"
+  rightcol:
+  - location: Indonesia
+    address: Jl. Griya Permata Hijau no D1 Purwomartani Kalasan 543881
+  - location: Tokyo
+    address: 35 Mandalay Road 13–37 Mandalay Towers Singapore 308215
+
+
+social:
+  enable: true
+  items:
+  - icon: "bx bxl-facebook"
+    title: "facebook"
+    link: "#"
+  - icon: "bx bxl-instagram"
+    title: "instagram"
+    link: "#"
+  - icon: "bx bxl-twitter"
+    title: "twitter"
+    link: "#"
+  - icon: "bx bxl-youtube"
+    title: "youtube"
+    link: "#"
+
+      
+
+ 
+
+sass:
+  sass_dir: _sass
+  style: compressed # possible values: nested expanded compact compressed
+
+# Build settings
+// theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
